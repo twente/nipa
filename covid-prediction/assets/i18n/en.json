@@ -1,0 +1,13 @@
+{
+	"HEADER": {
+		"DASHBOARD": "DASHBOARD",
+		"ALGORITHM": "ALGORITHM",
+		"DATA": "DATA",
+		"ABOUT": "ABOUT US",
+		"API": "API",
+		"LANGUAGE": "LANGUAGE"
+	},
+	"DASHBOARD" : {
+		"DUMMY": "Dummy"
+	}
+}
