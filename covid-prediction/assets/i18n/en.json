@@ -10,6 +10,42 @@
 		"LANGUAGE": "LANGUAGE"
 	},
 	"DASHBOARD" : {
-		"DUMMY": "Dummy"
+		"INPUT": {
+			"INFOBOX": {
+				"TITLE": "Change infection probability",
+				"BODY": "By changing the infection probability, you can simulate the effect of introducing or relaxing preventative measures.",
+				"HEAD_1": "Introduction of preventative measure - Example:",
+				"EXAMPLE_1": "\"Assume that closing schools reduces the probability of infection by 10%.\"",
+				"DESCRIPTION_1": "To simulate this measure, set the slider to -10% (a reduction of 10%). By setting a start and end date, you can simulate the start date and end date of this measure.",
+				"HEAD_2": "Relaxation of preventative measure - Example:",
+				"EXAMPLE_2": "\"Assume that reopening schools increases the probability of infection by 5%.\"",
+				"DESCRIPTION_2": "To simulate this relaxation, set the slider to +5% (an increase of 5%). By setting a start date, you can simulate the starting date of this relaxation. You can leave the end date blank to simulate the relaxation of implemented measures."
+			},
+			"TITLE": "Change infection probability:",
+			"RESET": "Reset",
+			"START_DATE": "Start date:",
+			"END_DATE": "End date:"
+		},
+		"GRAPH": {
+			"INFOBOX": "Note: There is some missing data between 2 March 2020 and 14 April 2020. The missing data has been interpolated. For more details, please refer to the <a href=\"algorithm.html\">algorithm</a> page.",
+			"TITLE_CUMULATIVE": "Cumulative number of confirmed cases",
+			"TITLE_PER_DAY": "Number of confirmed cases per day",
+			"LEGEND_TOTAL": "Total",
+			"TOGGLE_CUMULATIVE": "Cumulative",
+			"AXIS_COUNT": "Amount",
+			"AXIS_DATE": "Reported Date",
+			"DATE_RANGE": "Date range:"
+		},
+		"MAP": {
+			"POPUP": {
+				"CURRENT": "Total number of cases until now",
+				"FORECAST": "Forecasted number of cases"
+			},
+			"TITLE": "Number of new COVID-19 patients",
+			"SUBTITLE": "Per 100,000 inhabitants per province",
+			"LEGEND_TITLE": "Amount per 100,000 inhabitants",
+			"NO_NEW_DATA": "Data for today is not available yet.",
+			"IS_PREDICTION": "This is a prediction."
+		}
 	}
 }

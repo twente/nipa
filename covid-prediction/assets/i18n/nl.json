@@ -10,6 +10,42 @@
 		"LANGUAGE": "TAAL"
 	},
 	"DASHBOARD" : {
-		"DUMMY": "Dummy"
+		"INPUT": {
+			"INFOBOX": {
+				"TITLE": "Infectiekans veranderen",
+				"BODY": "Door het veranderen van de infectiekans kunt u een maatregel of versoepeling simuleren.",
+				"HEAD_1": "Maatregel - Voorbeeld:",
+				"EXAMPLE_1": "\"Neem aan dat het sluiten van de scholen de kans tot infectie met 10% verlaagt.\"",
+				"DESCRIPTION_1": "Voor het simuleren van deze maatregel zet u de slider op -10% (een verlaging van 10%). Door het instellen van een start- en einddatum simuleert u de ingangsdatum en einddatum van deze maatregel.",
+				"HEAD_2": "Versoepeling - Voorbeeld:",
+				"EXAMPLE_2": "\"Neem aan dat het heropenen van de scholen de kans tot infectie met 5% verhoogt.\"",
+				"DESCRIPTION_2": "Voor het simuleren van deze versoepeling zet u de slider op +5% (een verhoging van 5%). Door het instellen van een startdatum simuleert u de ingangsdatum van deze versoepeling. Voor het simuleren van een versoepeling van ingevoerde maatregelen kunt u de einddatum leeg laten."
+			},
+			"TITLE": "Verander infectie kans:",
+			"RESET": "Reset",
+			"START_DATE": "Begindatum verandering:",
+			"END_DATE": "Einddatum verandering:"
+		},
+		"GRAPH": {
+			"INFOBOX": "Let op! Er ontbreekt data tussen 2 maart 2020 en 14 april 2020. Deze data is daarom geïnterpoleerd. Voor meer informatie kijkt u op de <a href=\"algorithm.html\">algoritme</a> pagina.",
+			"TITLE_CUMULATIVE": "Aantal bevestigde zieken cumulatief",
+			"TITLE_PER_DAY": "Aantal bevestigde zieken per dag",
+			"LEGEND_TOTAL": "Totaal",
+			"TOGGLE_CUMULATIVE": "Cumulatief",
+			"AXIS_COUNT": "Aantal",
+			"AXIS_DATE": "Meldingsdatum",
+			"DATE_RANGE": "Datumbereik grafiek:"
+		},
+		"MAP": {
+			"POPUP": {
+				"CURRENT": "Zieken tot nu toe",
+				"FORECAST": "Voorspelde hoeveelheid zieken"
+			},
+			"TITLE": "Aantal nieuwe COVID-19 patiënten",
+			"SUBTITLE": "Per 100.000 inwoners per provincie",
+			"LEGEND_TITLE": "Aantal per 100.000 inwoners",
+			"NO_NEW_DATA": "Er is nog geen data van vandaag beschikbaar.",
+			"IS_PREDICTION": "Dit is een voorspelling."
+		}
 	}
 }
