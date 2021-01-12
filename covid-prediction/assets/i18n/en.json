@@ -1,4 +1,5 @@
 {
+	"MISSING_TRANSLATION": "This page is not yet available in English.",
 	"HEADER": {
 		"TITLE_1": "COVID-19",
 		"TITLE_2": "PREDICTION",
@@ -24,7 +25,8 @@
 			"TITLE": "Change infection probability:",
 			"RESET": "Reset",
 			"START_DATE": "Start date:",
-			"END_DATE": "End date:"
+			"END_DATE": "End date:",
+			"DATE_PLACEHOLDER": "None"
 		},
 		"GRAPH": {
 			"INFOBOX": "Note: There is some missing data between 2 March 2020 and 14 April 2020. The missing data has been interpolated. For more details, please refer to the <a href=\"algorithm.html\">algorithm</a> page.",
@@ -34,7 +36,10 @@
 			"TOGGLE_CUMULATIVE": "Cumulative",
 			"AXIS_COUNT": "Amount",
 			"AXIS_DATE": "Reported Date",
-			"DATE_RANGE": "Date range:"
+			"DATE_RANGE": "Date range:",
+			"POPUP": {
+				"CASES": "cases"
+			}
 		},
 		"MAP": {
 			"POPUP": {
@@ -45,7 +50,34 @@
 			"SUBTITLE": "Per 100,000 inhabitants per province",
 			"LEGEND_TITLE": "Amount per 100,000 inhabitants",
 			"NO_NEW_DATA": "Data for today is not available yet.",
-			"IS_PREDICTION": "This is a prediction."
+			"IS_PREDICTION": "This is a prediction.",
+			"TODAY": "Today",
+			"SLIDER": {
+				"TICK0": "today",
+				"TICK1": "+1 day",
+				"TICK2": "+2 days",
+				"TICK3": "+3 days",
+				"TICK4": "+4 days",
+				"TICK5": "+5 days"
+			},
+			"NO_CASE": "No reported cases"
 		}
+	},
+	"ALGORITHM": {
+		"PRED_TITLE": "Prediction",
+		"PRED_BODY": "The algorithm uses the SIR model: every individual has a state which is either 'susceptible', 'infectious', or 'removed'. As a first step, the data is pre-processed in order to obtain an SIR model for each province. Based on this, the curing probability and infection probability between two provinces are determined. These values can then be used in combination with the available data to arrive at a prediction.<br><br>This type of prediction algorithm is network-based: the prediction is made based on the estimated interaction between provinces. Several studies have recently been conducted that apply this principle, all with promising results.<br><br>For details on the algorithm, please refer to the adjacent article.",
+		"DATA_TITLE": "Data Collection",
+		"DATA_BODY": "The predictions displayed on the dashboard are based on publicly available data. The National Institute for Public Health and the Environment (Dutch: <i>Rijksinstituut voor Volksgezondheid en Milieu</i> or <i>RIVM</i>) offers various data sources<sup>[1]</sup>. The Esri data source is the most appropriate for this project<sup>[2]</sup>. This source includes the number of reports per municipality per day, which can then be added up to arrive at a total amount per province.<br><br>A disadvantage of this source is that are several days for which data is not available. For the prediction algorithm used, it is important that the infection data is divided into provinces, but this missing data cannot be found per province on other sources. The missing data is therefore filled in by means of linear interpolation.<br><br>The data source only gives the number of new reports per day. These can also be reports of people who have been diagnosed a few days earlier, but were only entered into the system later and were not retroactively added to the correct days. This is also a disadvantage of the data source, but there are no alternative sources that can address this problem either. However, generally speaking this problem only affects a few reports and the delay is no more than two days, so this does not have a significant impact on the prediction algorithm.<br><br>After this process, all of the necessary data is available. Because the prediction algorithm uses number of new infections per day and the data source only has the cumulative number of reports available, the number of new infections is determined by taking the difference between two consecutive days.",
+		"AUTH_TITLE": "Authors of the paper"
+	},
+	"DATA": {
+		"TABLE_NAMES": {
+			"DATE": "Date",
+			"TOTAL": "Total"
+		},
+		"DESCRIPTION": "These tables contain the data used to make the predictions. The data can be downloaded via the <a href=\"{{docsUrl}}\" target=\"_blank\">API</a>.",
+		"TITLE_INFECTED": "Number of infected individuals per day",
+		"TOGGLE_CUMU": "Cumulative",
+		"TITLE_INHABITANTS": "Number of inhabitants per province as of last noted date"
 	}
 }

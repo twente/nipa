@@ -1,4 +1,5 @@
 {
+	"MISSING_TRANSLATION": "Deze pagina is nog niet beschikbaar in het Nederlands.",
 	"HEADER": {
 		"TITLE_1": "COVID-19",
 		"TITLE_2": "VOORSPELLING",
@@ -24,7 +25,8 @@
 			"TITLE": "Verander infectie kans:",
 			"RESET": "Reset",
 			"START_DATE": "Begindatum verandering:",
-			"END_DATE": "Einddatum verandering:"
+			"END_DATE": "Einddatum verandering:",
+			"DATE_PLACEHOLDER": "Geen"
 		},
 		"GRAPH": {
 			"INFOBOX": "Let op! Er ontbreekt data tussen 2 maart 2020 en 14 april 2020. Deze data is daarom geïnterpoleerd. Voor meer informatie kijkt u op de <a href=\"algorithm.html\">algoritme</a> pagina.",
@@ -34,7 +36,10 @@
 			"TOGGLE_CUMULATIVE": "Cumulatief",
 			"AXIS_COUNT": "Aantal",
 			"AXIS_DATE": "Meldingsdatum",
-			"DATE_RANGE": "Datumbereik grafiek:"
+			"DATE_RANGE": "Datumbereik grafiek:",
+			"POPUP": {
+				"CASES": "zieken"
+			}
 		},
 		"MAP": {
 			"POPUP": {
@@ -45,7 +50,34 @@
 			"SUBTITLE": "Per 100.000 inwoners per provincie",
 			"LEGEND_TITLE": "Aantal per 100.000 inwoners",
 			"NO_NEW_DATA": "Er is nog geen data van vandaag beschikbaar.",
-			"IS_PREDICTION": "Dit is een voorspelling."
+			"IS_PREDICTION": "Dit is een voorspelling.",
+			"TODAY": "Vandaag",
+			"SLIDER": {
+				"TICK0": "vandaag",
+				"TICK1": "+1 dag",
+				"TICK2": "+2 dagen",
+				"TICK3": "+3 dagen",
+				"TICK4": "+4 dagen",
+				"TICK5": "+5 dagen"
+			},
+			"NO_CASE": "Geen meldingen"
 		}
+	},
+	"ALGORITHM": {
+		"PRED_TITLE": "Voorspelling",
+		"PRED_BODY": "Het algoritme maakt gebruik van het SIR-model: een individueel is altijd in een van de delen 'susceptible' (vatbaar), 'infectious' (besmettelijk) of 'removed' (verwijderd). Als eerste stap wordt de data voorverwerkt om zo een SIR-model te krijgen voor elke provincie. Hier op gebaseerd wordt er een genezingskans en de infectiekans tussen twee provincies vastgesteld. De vastgestelde waarde kunnen vervolgens gebruikt worden in combinatie met de beschikbare data om tot een voorspelling te komen.<br><br>Dit type voorspellingsalgoritme is netwerkgebaseerd: de voorspelling wordt gemaakt aan de hand van de geschatte interactie tussen provincies. Recentelijk zijn er meerdere studies uitgevoerd die dit principe toepassen, allen met veelbelovende resultaten.<br><br>Voor details over het algoritme kunt u het nevenstaande artikel raadplegen.",
+		"DATA_TITLE": "Datacollectie",
+		"DATA_BODY": "De voorspellingen zoals weergegeven op het dashboard worden gebaseerd op publiekelijk toegankelijke data. Het RIVM biedt verschillende databronnen<sup>[1]</sup>. Voor dit project is de Esri databron het meest toepasselijk<sup>[2]</sup>. Deze bron bevat onder andere het aantal meldingen per gemeente per dag, die vervolgens kunnen worden opgeteld om tot een totale hoeveelheid per provincie te komen.<br><br>Een nadeel aan deze bron is dat er van enkele dagen geen data beschikbaar is. Het is voor het gebruikte voorspellingsalgoritme van belang dat de data is opgedeeld in provincies, echter is deze ontbrekende data niet per provincie op andere bronnen te vinden. De ontbrekende data wordt ingevuld door middel van interpolatie.<br><br>De databron beschikt daarnaast ook alleen over de hoeveelheid nieuwe meldingen per dag. Dit kunnen ook meldingen zijn van zieken die al enkele dagen eerder zijn vastgesteld, maar pas later in het systeem zijn opgenomen en niet met terugwerkende kracht bij de juiste dagen worden opgeteld. Ook dit is een nadeel aan de databron, maar ook voor dit probleem was geen andere databron beschikbaar. Echter, vaak betreft het enkele meldingen die maximaal twee dagen eerder zijn vastgesteld en dit zal dus geen grote impact hebben op het voorspellingsalgoritme.<br><br>Hierna is alle benodigde data aanwezig. Omdat het voorspellingsalgoritme gebruik maakt van absolute frequenties en de databron alleen cumulatieve data beschikbaar stelt, worden de absolute frequenties bepaald door het verschil tussen twee achtereenvolgende dagen te nemen.",
+		"AUTH_TITLE": "Auteurs van het artikel"
+	},
+	"DATA": {
+		"TABLE_NAMES": {
+			"DATE": "Datum",
+			"TOTAL": "Totaal"
+		},
+		"DESCRIPTION": "Deze tabellen geven de data weer die gebruikt wordt om voorspellingen te doen. Deze data is te downloaden via de <a href=\"{{docsUrl}}\" target=\"_blank\">API</a>.",
+		"TITLE_INFECTED": "Geïnfectecteerden per datum",
+		"TOGGLE_CUMU": "Cumulatief",
+		"TITLE_INHABITANTS": "Inwoners per provincie per laatst genoteerde datum"
 	}
 }
