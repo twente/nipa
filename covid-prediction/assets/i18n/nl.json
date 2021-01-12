@@ -75,7 +75,7 @@
 			"DATE": "Datum",
 			"TOTAL": "Totaal"
 		},
-		"DESCRIPTION": "Deze tabellen geven de data weer die gebruikt wordt om voorspellingen te doen. Deze data is te downloaden via de <a href=\"{{docsUrl}}\" target=\"_blank\">API</a>.",
+		"DESCRIPTION": "Deze tabellen geven de data weer die gebruikt wordt om voorspellingen te doen. Deze data is te downloaden via de <a href=\"http://networkdatascience.ewi.tudelft.nl/docs\" target=\"_blank\">API</a>.",
 		"TITLE_INFECTED": "Geïnfectecteerden per datum",
 		"TOGGLE_CUMU": "Cumulatief",
 		"TITLE_INHABITANTS": "Inwoners per provincie per laatst genoteerde datum"

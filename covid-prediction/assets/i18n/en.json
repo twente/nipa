@@ -75,7 +75,7 @@
 			"DATE": "Date",
 			"TOTAL": "Total"
 		},
-		"DESCRIPTION": "These tables contain the data used to make the predictions. The data can be downloaded via the <a href=\"{{docsUrl}}\" target=\"_blank\">API</a>.",
+		"DESCRIPTION": "These tables contain the data used to make the predictions. The data can be downloaded via the <a href=\"http://networkdatascience.ewi.tudelft.nl/docs\" target=\"_blank\">API</a>.",
 		"TITLE_INFECTED": "Number of infected individuals per day",
 		"TOGGLE_CUMU": "Cumulative",
 		"TITLE_INHABITANTS": "Number of inhabitants per province as of last noted date"
