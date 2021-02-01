@@ -1,4 +1,6 @@
 {
+	"Datum": "Datum",
+	"Totaal": "Totaal",
 	"MISSING_TRANSLATION": "Deze pagina is nog niet beschikbaar in het Nederlands.",
 	"HEADER": {
 		"TITLE_1": "COVID-19",
@@ -15,28 +17,28 @@
 			"INFOBOX": {
 				"TITLE": "Infectiekans veranderen",
 				"BODY": "Door het veranderen van de infectiekans kunt u een maatregel of versoepeling simuleren.",
-				"HEAD_1": "Maatregel - Voorbeeld:",
+				"HEAD_1": "Maatregel - Voorbeeld",
 				"EXAMPLE_1": "\"Neem aan dat het sluiten van de scholen de kans tot infectie met 10% verlaagt.\"",
 				"DESCRIPTION_1": "Voor het simuleren van deze maatregel zet u de slider op -10% (een verlaging van 10%). Door het instellen van een start- en einddatum simuleert u de ingangsdatum en einddatum van deze maatregel.",
-				"HEAD_2": "Versoepeling - Voorbeeld:",
+				"HEAD_2": "Versoepeling - Voorbeeld",
 				"EXAMPLE_2": "\"Neem aan dat het heropenen van de scholen de kans tot infectie met 5% verhoogt.\"",
 				"DESCRIPTION_2": "Voor het simuleren van deze versoepeling zet u de slider op +5% (een verhoging van 5%). Door het instellen van een startdatum simuleert u de ingangsdatum van deze versoepeling. Voor het simuleren van een versoepeling van ingevoerde maatregelen kunt u de einddatum leeg laten."
 			},
-			"TITLE": "Verander infectie kans:",
+			"TITLE": "Verander infectie kans",
 			"RESET": "Reset",
-			"START_DATE": "Begindatum verandering:",
-			"END_DATE": "Einddatum verandering:",
+			"START_DATE": "Begindatum verandering",
+			"END_DATE": "Einddatum verandering",
 			"DATE_PLACEHOLDER": "Geen"
 		},
 		"GRAPH": {
-			"INFOBOX": "Let op! Er ontbreekt data tussen 2 maart 2020 en 14 april 2020. Deze data is daarom geïnterpoleerd. Voor meer informatie kijkt u op de <a href=\"algorithm.html\">algoritme</a> pagina.",
+			"INFOBOX": "Let op! Er ontbreekt data tussen 2 maart 2020 en 14 april 2020. Deze data is daarom geïnterpoleerd. Voor meer informatie kijkt u op de <a href=\"algorithm.html\">Algoritme</a> pagina.",
 			"TITLE_CUMULATIVE": "Aantal bevestigde zieken cumulatief",
 			"TITLE_PER_DAY": "Aantal bevestigde zieken per dag",
 			"LEGEND_TOTAL": "Totaal",
 			"TOGGLE_CUMULATIVE": "Cumulatief",
 			"AXIS_COUNT": "Aantal",
 			"AXIS_DATE": "Meldingsdatum",
-			"DATE_RANGE": "Datumbereik grafiek:",
+			"DATE_RANGE": "Datumbereik grafiek",
 			"POPUP": {
 				"CASES": "zieken"
 			}
@@ -78,6 +80,9 @@
 		"DESCRIPTION": "Deze tabellen geven de data weer die gebruikt wordt om voorspellingen te doen. Deze data is te downloaden via de <a href=\"http://networkdatascience.ewi.tudelft.nl/docs\" target=\"_blank\">API</a>.",
 		"TITLE_INFECTED": "Geïnfectecteerden per datum",
 		"TOGGLE_CUMU": "Cumulatief",
+		"LEGEND": "Aantal nieuwe infecties per dag",
 		"TITLE_INHABITANTS": "Inwoners per provincie per laatst genoteerde datum"
+	},
+	"ABOUT": {
 	}
 }

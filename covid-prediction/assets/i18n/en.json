@@ -1,4 +1,6 @@
 {
+	"Datum": "Date",
+	"Totaal": "Total",
 	"MISSING_TRANSLATION": "This page is not yet available in English.",
 	"HEADER": {
 		"TITLE_1": "COVID-19",
@@ -15,28 +17,28 @@
 			"INFOBOX": {
 				"TITLE": "Change infection probability",
 				"BODY": "By changing the infection probability, you can simulate the effect of introducing or relaxing preventative measures.",
-				"HEAD_1": "Introduction of preventative measure - Example:",
+				"HEAD_1": "Introduction of preventative measure - Example",
 				"EXAMPLE_1": "\"Assume that closing schools reduces the probability of infection by 10%.\"",
 				"DESCRIPTION_1": "To simulate this measure, set the slider to -10% (a reduction of 10%). By setting a start and end date, you can simulate the start date and end date of this measure.",
-				"HEAD_2": "Relaxation of preventative measure - Example:",
+				"HEAD_2": "Relaxation of preventative measure - Example",
 				"EXAMPLE_2": "\"Assume that reopening schools increases the probability of infection by 5%.\"",
 				"DESCRIPTION_2": "To simulate this relaxation, set the slider to +5% (an increase of 5%). By setting a start date, you can simulate the starting date of this relaxation. You can leave the end date blank to simulate the relaxation of implemented measures."
 			},
-			"TITLE": "Change infection probability:",
+			"TITLE": "Change infection probability",
 			"RESET": "Reset",
-			"START_DATE": "Start date:",
-			"END_DATE": "End date:",
+			"START_DATE": "Start date",
+			"END_DATE": "End date",
 			"DATE_PLACEHOLDER": "None"
 		},
 		"GRAPH": {
-			"INFOBOX": "Note: There is some missing data between 2 March 2020 and 14 April 2020. The missing data has been interpolated. For more details, please refer to the <a href=\"algorithm.html\">algorithm</a> page.",
+			"INFOBOX": "Note: There is some missing data between 2 March 2020 and 14 April 2020. The missing data has been interpolated. For more details, please refer to the <a href=\"algorithm.html\">Algorithm</a> page.",
 			"TITLE_CUMULATIVE": "Cumulative number of confirmed cases",
 			"TITLE_PER_DAY": "Number of confirmed cases per day",
 			"LEGEND_TOTAL": "Total",
 			"TOGGLE_CUMULATIVE": "Cumulative",
-			"AXIS_COUNT": "Amount",
+			"AXIS_COUNT": "Cases",
 			"AXIS_DATE": "Reported Date",
-			"DATE_RANGE": "Date range:",
+			"DATE_RANGE": "Date range",
 			"POPUP": {
 				"CASES": "cases"
 			}
@@ -48,7 +50,7 @@
 			},
 			"TITLE": "Number of new COVID-19 patients",
 			"SUBTITLE": "Per 100,000 inhabitants per province",
-			"LEGEND_TITLE": "Amount per 100,000 inhabitants",
+			"LEGEND_TITLE": "Cases per 100,000 inhabitants",
 			"NO_NEW_DATA": "Data for today is not available yet.",
 			"IS_PREDICTION": "This is a prediction.",
 			"TODAY": "Today",
@@ -78,6 +80,21 @@
 		"DESCRIPTION": "These tables contain the data used to make the predictions. The data can be downloaded via the <a href=\"http://networkdatascience.ewi.tudelft.nl/docs\" target=\"_blank\">API</a>.",
 		"TITLE_INFECTED": "Number of infected individuals per day",
 		"TOGGLE_CUMU": "Cumulative",
+		"LEGEND": "Number of new cases per day",
 		"TITLE_INHABITANTS": "Number of inhabitants per province as of last noted date"
+	},
+	"ABOUT": {
+		"ABOUT": {
+			"TITLE": "About Us",
+			"BODY": "This website is maintained by the <a href=\"https://www.nas.ewi.tudelft.nl/\">Network Architectures and Services</a> (NAS) group of the <a href=\"https://www.tudelft.nl/en/\" target=\"_blank\">Delft University of Technology</a>. The NAS group belongs to the Quantum and Computer Engineering Department in the faculty of Electrical Engineering, Mathematics and Computer Science (EEMCS).<br><br>NAS educates and conducts research in the broad area of complex networks, ranging from man-made infrastructures such as data communications and energy networks, to biological, brain, social and financial networks. The emphasis lies on understanding network characteristics as well as the processes running on top of the network.<br><br>The prediction algorithm used on this website is based on a paper published by members of the NAS group, <a href=\"https://link.springer.com/epdf/10.1007/s41109-020-00274-2\" target=\"_blank\"><i>Network-inference-based prediction of the COVID-19 epidemic outbreak in the Chinese province Hubei</i></a>. More information about the algorithm can be found on the <a href=\"algorithm.html\">Algorithm</a> page."
+		},
+		"MAINTAIN": {
+			"TITLE": "Website Maintainers",
+			"BODY": "This website has been adapted for the NAS group by two masters students, Brian Chang and Liufei Yang. They are also maintaining this website along with two other members of the NAS group, <a href=\"https://www.nas.ewi.tudelft.nl/index.php/long-ma\" target=\"_blank\">Long Ma</a> and <a href=\"https://www.nas.ewi.tudelft.nl/index.php/massimo-achterberg\" target=\"_blank\">Massimo Achterberg</a>.<br><br>The maintainers of the website would like to thank <a href=\"https://www.nas.ewi.tudelft.nl/people/Piet/\" target=\"_blank\">Prof.dr.ir. Piet Van Mieghem</a> and the other members of the NAS group for providing input and feedback during the development of this website."
+		},
+		"ORIGINAL": {
+			"TITLE": "Original Creators",
+			"BODY": "The original version of this website was produced by a group of five Computer Science students for their final bachelor project. The client for the project was <a href=\"https://www.tudelft.nl/ewi/over-de-faculteit/afdelingen/intelligent-systems/multimedia-computing/people/huijuan-wang/\" target=\"_blank\">Dr. Huijuan Wang</a> and their coach was <a href=\"https://www.tudelft.nl/ewi/over-de-faculteit/afdelingen/software-technology/web-information-systems/people/claudia-hauff/\" target=\"_blank\">Dr. Claudia Hauff</a>. The NAS group would like to express gratitude to the original creators for allowing us to adapt their work:"
+		}
 	}
 }
