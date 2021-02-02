@@ -9,6 +9,7 @@
 		"ALGORITHM": "ALGORITHM",
 		"DATA": "DATA",
 		"ABOUT": "ABOUT US",
+		"DOWNLOADS": "DOWNLOADS",
 		"API": "API",
 		"LANGUAGE": "LANGUAGE"
 	},
@@ -77,7 +78,7 @@
 			"DATE": "Date",
 			"TOTAL": "Total"
 		},
-		"DESCRIPTION": "These tables contain the data used to make the predictions. The data can be downloaded via the <a href=\"http://networkdatascience.ewi.tudelft.nl/docs\" target=\"_blank\">API</a>.",
+		"DESCRIPTION": "These tables contain the data used to make the predictions. Please note that the data has been pre-processed and may differ from the numbers published by the RIVM! An explanation of the pre-processing steps can be found on the <a href=\"downloads.html\">Downloads</a> page.",
 		"TITLE_INFECTED": "Number of infected individuals per day",
 		"TOGGLE_CUMU": "Cumulative",
 		"LEGEND": "Number of new cases per day",
@@ -95,6 +96,32 @@
 		"ORIGINAL": {
 			"TITLE": "Original Creators",
 			"BODY": "The original version of this website was produced by a group of five Computer Science students for their final bachelor project. The client for the project was <a href=\"https://www.tudelft.nl/ewi/over-de-faculteit/afdelingen/intelligent-systems/multimedia-computing/people/huijuan-wang/\" target=\"_blank\">Dr. Huijuan Wang</a> and their coach was <a href=\"https://www.tudelft.nl/ewi/over-de-faculteit/afdelingen/software-technology/web-information-systems/people/claudia-hauff/\" target=\"_blank\">Dr. Claudia Hauff</a>. The NAS group would like to express gratitude to the original creators for allowing us to adapt their work:"
+		}
+	},
+	"DOWNLOADS": {
+		"ABOUT": {
+			"TITLE": "About the Data",
+			"BODY": "On this page, you can download the data used for prediction on this website. Please note that this data has been pre-processed, so some of it may be different from the infection numbers reported by the RIVM. An explanation of the pre-processing steps follows.",
+			"CUMULATIVE": {
+				"TITLE": "Cumulative Infections per Province per Day",
+				"BODY": "The RIVM reports the cumulative number of infections per municipality which we sum per province to find the cumulative number of infections per province per day. However, data is not available for some municipalities between 2 March 2020 and 14 April 2020. For the prediction algorithm used, it is important that the infection data is divided into provinces, but this missing data cannot be found per province on other sources either.<br>The following pre-processing steps were taken:<br><br><ul class=\"mb-0\"><li>If the cumulative number of infections is missing on 2 March 2020 (the date on which the data begins), it is set to 0 for this day.</li><br><li>If the cumulative number of infections is missing on any other day, it is filled in through linear interpolation. When linear interpolation results in a non-integer value, it is cast to an integer with a floor function. For example: assume on 1 April there are 0 infections, on 2 April and 3 April the data is missing, and on 4 April there are 4 infections. Linear interpolation results in 1.33 infections on 2 April and 2.67 infections on 3 April. Since these are non-integer values, they are cast to integers using a floor function. This finally results in 1 infection on 2 April and 2 infections on 3 April.</li></ul><br>For each municipality, any missing data is first filled in using the steps described above. Afterwards, the data is summed per province to arrive at the cumulative infections per province per day."
+			},
+			"NEW": {
+				"TITLE": "New Infections per Province per Day",
+				"BODY": "The RIVM reports the cumulative number of infections, so to find the number of new infections per day, the difference between two days is taken for each province. On 2 March 2020 (the date on which the data begins), the number of new infections is equal to the cumulative number of infections on that day. For the remaining days, the number of new infections is found by subtracting the cumulative number of infections on the previous day from the cumulative number of infections on the current day.<br><br>In some cases, the number of new infections is negative, which indicates that the cumulative number of infections decreases between two days. This is presumably due to data entry errors. In the cases where the number of new infections is negative, it is set to 0."
+			},
+			"INHABITANTS": {
+				"TITLE": "Number of Inhabitants per Province as of Last Noted Date",
+				"BODY": "The last noted date is the last date on which the number of inhabitants of any province has changed. It is possible that the number of inhabitants has not been updated for every province on this day. For provinces which do not have an updated number of inhabitants, the most recent estimate is used instead."
+			}
+		},
+		"DOWNLOADS": {
+			"TITLE": "Download Links",
+			"UPDATED": "Data last updated at",
+			"CUMULATIVE": "Cumulative Infections per Province per Day",
+			"NEW": "New Infections per Province per Day",
+			"INHABITANTS": "Number of Inhabitants per Province",
+			"CSV": "CSV format"
 		}
 	}
 }

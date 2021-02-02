@@ -9,6 +9,7 @@
 		"ALGORITHM": "ALGORITME",
 		"DATA": "DATA",
 		"ABOUT": "OVER ONS",
+		"DOWNLOADS": "DOWNLOADS",
 		"API": "API",
 		"LANGUAGE": "TAAL"
 	},
@@ -77,12 +78,14 @@
 			"DATE": "Datum",
 			"TOTAL": "Totaal"
 		},
-		"DESCRIPTION": "Deze tabellen geven de data weer die gebruikt wordt om voorspellingen te doen. Deze data is te downloaden via de <a href=\"http://networkdatascience.ewi.tudelft.nl/docs\" target=\"_blank\">API</a>.",
+		"DESCRIPTION": "Deze tabellen geven de data weer die gebruikt wordt om voorspellingen te doen. Deze data is te downloaden op de <a href=\"downloads.html\">Downloads</a> pagina.",
 		"TITLE_INFECTED": "Geïnfectecteerden per datum",
 		"TOGGLE_CUMU": "Cumulatief",
 		"LEGEND": "Aantal nieuwe infecties per dag",
 		"TITLE_INHABITANTS": "Inwoners per provincie per laatst genoteerde datum"
 	},
 	"ABOUT": {
+	},
+	"DOWNLOADS": {
 	}
 }
