@@ -25,7 +25,7 @@
 				"EXAMPLE_2": "\"Neem aan dat het heropenen van de scholen de kans tot infectie met 5% verhoogt.\"",
 				"DESCRIPTION_2": "Voor het simuleren van deze versoepeling zet u de slider op +5% (een verhoging van 5%). Door het instellen van een startdatum simuleert u de ingangsdatum van deze versoepeling. Voor het simuleren van een versoepeling van ingevoerde maatregelen kunt u de einddatum leeg laten."
 			},
-			"TITLE": "Verander infectie kans",
+			"TITLE": "Verander infectiekans",
 			"RESET": "Reset",
 			"START_DATE": "Begindatum verandering",
 			"END_DATE": "Einddatum verandering",
@@ -34,7 +34,7 @@
 		"GRAPH": {
 			"INFOBOX": "Let op! Er ontbreekt data tussen 2 maart 2020 en 14 april 2020. Deze data is daarom geïnterpoleerd. Voor meer informatie kijkt u op de <a href=\"algorithm.html\">Algoritme</a> pagina.",
 			"TITLE_CUMULATIVE": "Aantal bevestigde zieken cumulatief",
-			"TITLE_PER_DAY": "Aantal bevestigde zieken per dag",
+			"TITLE_PER_DAY": "Aantal besmettingen per dag",
 			"LEGEND_TOTAL": "Totaal",
 			"TOGGLE_CUMULATIVE": "Cumulatief",
 			"AXIS_COUNT": "Aantal",
@@ -49,7 +49,7 @@
 				"CURRENT": "Zieken tot nu toe",
 				"FORECAST": "Voorspelde hoeveelheid zieken"
 			},
-			"TITLE": "Aantal nieuwe COVID-19 patiënten",
+			"TITLE": "Aantal nieuwe COVID-19 besmettingen",
 			"SUBTITLE": "Per 100.000 inwoners per provincie",
 			"LEGEND_TITLE": "Aantal per 100.000 inwoners",
 			"NO_NEW_DATA": "Er is nog geen data van vandaag beschikbaar.",
@@ -78,14 +78,50 @@
 			"DATE": "Datum",
 			"TOTAL": "Totaal"
 		},
-		"DESCRIPTION": "Deze tabellen geven de data weer die gebruikt wordt om voorspellingen te doen. Deze data is te downloaden op de <a href=\"downloads.html\">Downloads</a> pagina.",
-		"TITLE_INFECTED": "Geïnfectecteerden per datum",
+		"DESCRIPTION": "Deze tabellen geven de data weer die gebruikt wordt om voorspellingen te doen. Let op, de data is bewerkt en kan verschillen met de officiële cijfers. Een uitgebreide uitleg is te vinden op de <a href=\"downloads.html\">Downloads</a> pagina.",
+		"TITLE_INFECTED": "Aantal besmettingen per dag",
 		"TOGGLE_CUMU": "Cumulatief",
 		"LEGEND": "Aantal nieuwe infecties per dag",
 		"TITLE_INHABITANTS": "Inwoners per provincie per laatst genoteerde datum"
 	},
 	"ABOUT": {
+		"ABOUT": {
+			"TITLE": "Over ons",
+			"BODY": "Deze website wordt onderhouden door de groep <a href=\"https://www.nas.ewi.tudelft.nl/\">Network Architectures and Services</a> (NAS) van de <a href=\"https://www.tudelft.nl/\" target=\"_blank\">Technologische Universiteit Delft</a>. NAS behoort tot de afdeling Quantum and Computer Engineering (QCE) van de faculteit Elektrotechniek Wiskunde en Informatica.<br><br>NAS doceert en doet onderzoek in het brede domain van complexe netwerken. Complexe netwerken zijn aanwezig in tal van infrastructuren zoals communicatienetwerken en transportnetwerken, alsmede in natuurlijke processen zoals biologische, sociale and financiële netwerken. De focus ligt op het begrijpen van het netwerk zelf en op het proces dat zich verspreidt over het netwerk.<br><br>Het voorspellingsalgoritme dat deze website gebruikt, is gebaseerd op een artikel dat is gepubliceerd door onderzoekers van de NAS afdeling, <a href=\"https://link.springer.com/epdf/10.1007/s41109-020-00274-2\" target=\"_blank\"><i>Network-inference-based prediction of the COVID-19 epidemic outbreak in the Chinese province Hubei</i></a>. Meer informatie over dit algoritme kunt u vinden op de <a href=\"algorithm.html\">Algoritme</a> pagina."
+		},
+		"MAINTAIN": {
+			"TITLE": "Website beheerders",
+			"BODY": "Deze website is ontwikkeld voor NAS door de master studenten Brian Chang and Liufei Yang. Het verdere beheer van de website is in handen van <a href=\"https://www.nas.ewi.tudelft.nl/index.php/long-ma\" target=\"_blank\">Long Ma</a> en <a href=\"https://www.nas.ewi.tudelft.nl/index.php/massimo-achterberg\" target=\"_blank\">Massimo Achterberg</a>.<br><br>De beheerders willen <a href=\"https://www.nas.ewi.tudelft.nl/people/Piet/\" target=\"_blank\">prof. dr. ir. Piet Van Mieghem</a> en de andere onderzoekers van de NAS groep bedanken voor hun feedback tijdens de ontwikkelingsfase van deze website."
+		},
+		"ORIGINAL": {
+			"TITLE": "Originele auteurs",
+			"BODY": "Deze website is ontworpen door een groep van vijf bachelorstudenten Informatica voor hun Bachelor Eindproject. De website is ontwikkeld voor <a href=\"https://www.tudelft.nl/ewi/over-de-faculteit/afdelingen/intelligent-systems/multimedia-computing/people/huijuan-wang/\" target=\"_blank\">Dr. Huijuan Wang</a> en zij werden begeleid door <a href=\"https://www.tudelft.nl/ewi/over-de-faculteit/afdelingen/software-technology/web-information-systems/people/claudia-hauff/\" target=\"_blank\">Dr. Claudia Hauff</a>. De NAS groep is deze bachelorstudenten zeer erkentelijk en wil hen hartelijk bedanken voor het ontwikkelen van deze website."
+		}
 	},
 	"DOWNLOADS": {
+		"ABOUT": {
+			"TITLE": "Over de data",
+			"BODY": "Op deze pagina kunt u de data downloaden die wordt gebruikt door deze website. Let op dat deze data kan afwijken van de officiële cijfers van het RIVM (Rijksinstituut voor Volksgezondheid en Milieu), omdat de data wordt voorbewerkt. Hieronder staat een korte uitleg van deze voorbewerking.",
+			"CUMULATIVE": {
+				"TITLE": "Aantal besmettingen per provincie per dag",
+				"BODY": "Het RIVM rapporteert het aantal besmettingen per gemeente per dag. Om het aantal besmettingen per provincie te verkrijgen, worden de besmettingen uit alle gemeentes in dezelfde provincie bij elkaar opgeteld. Helaas is niet alle informatie beschikbaar voor alle gemeentes tussen 2 maart en 14 april 2020. Zodoende zijn de volgende voorbewerkingsstappen genomen:<br><br><ul class=\"mb-0\"><li>Als het cumulatieve aantal besmettingen in een gemeente op 2 maart 2020 onbekend is, dan wordt het gelijkgesteld aan nul.</li><br><li>Als het cumulatieve aantal besmettingen onbekend is op een andere dag dan 2 maart 2020, dan wordt dit benaderd door middel van lineaire interpolatie. Als de lineaire interpolatie een kommagetal oplevert, dan wordt dit getal naar beneden afgerond. Een voorbeeld: Stel er zijn 0 besmettingen op 1 april en in totaal 4 besmettingen op 4 april. Met lineaire interpolatie vinden we dan 1,33 besmettingen op 2 april en 2,67 besmettingen op 3 april. Deze getallen worden naar beneden afgerond, en dus is er ongeveer 1 besmetting op 2 april en 2 besmettingen op 3 april.</li></ul><br>Voor iedere gemeente wordt eerst de missende data aangevuld met lineaire interpolatie waarna er wordt gesommeerd over alle gemeentes uit dezelfde provincie om het aantal besmettingen per provincie te verkrijgen."
+			},
+			"NEW": {
+				"TITLE": "Nieuwe besmettingen per provincie per dag",
+				"BODY": "Het RIVM rapporteert het cumulatieve aantal besmettingen per dag. Om het dagelijks aantal nieuwe besmettingen te berekenen, nemen we het verschil voor het cumulatieve aantal besmettingen tussen twee opeenvolgende dagen. Op 2 maart 2020 (de startdatum) wordt het nieuwe aantal besmettingen gelijkgesteld aan het cumulatieve aantal besmettingen.<br><br>Het kan soms voorkomen dat het aantal nieuwe besmettingen negatief is, wat suggereert dat het cumulatieve aantal besmettingen afneemt. Als de gerapporteerde data van de vorige dagen te hoog is geweest en moet worden gecorrigeerd, dan kan het lijken alsof het totaal aantal besmettingen afneemt. In dit geval stellen we het aantal nieuwe besmettingen gelijk aan nul."
+			},
+			"INHABITANTS": {
+				"TITLE": "Aantal inwoners per provincie (per laatst genoteerde datum)",
+				"BODY": "De laatst genoteerde datum geeft de laatste datum aan waarin het aantal inwoners van minstens één van de provincies is veranderd. Het is mogelijk dat de aantallen niet voor alle provincies zijn gewijzigd. In dat geval wordt het meest recente cijfer voor het aantal inwoners gebruikt."
+			}
+		},
+		"DOWNLOADS": {
+			"TITLE": "Downloadlinks",
+			"UPDATED": "Laatste update",
+			"CUMULATIVE": "Cumulatieve aantal besmettingen per provincie per dag",
+			"NEW": "Nieuwe aantal besmettingen per provincie per dag",
+			"INHABITANTS": "Aantal inwoners per provincie",
+			"CSV": "CSV bestand"
+		}
 	}
 }
