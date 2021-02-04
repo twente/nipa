@@ -81,7 +81,7 @@
 		"DESCRIPTION": "Deze tabellen geven de data weer die gebruikt wordt om voorspellingen te doen. Let op, de data is bewerkt en kan verschillen met de officiële cijfers. Een uitgebreide uitleg is te vinden op de <a href=\"downloads.html\">Downloads</a> pagina.",
 		"TITLE_INFECTED": "Aantal besmettingen per dag",
 		"TOGGLE_CUMU": "Cumulatief",
-		"LEGEND": "Aantal nieuwe infecties per dag",
+		"LEGEND": "Aantal nieuwe besmettingen per dag",
 		"TITLE_INHABITANTS": "Inwoners per provincie per laatst genoteerde datum"
 	},
 	"ABOUT": {
