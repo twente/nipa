@@ -1,6 +1,4 @@
 {
-	"Datum": "Datum",
-	"Totaal": "Totaal",
 	"MISSING_TRANSLATION": "Deze pagina is nog niet beschikbaar in het Nederlands.",
 	"HEADER": {
 		"TITLE_1": "COVID-19",
@@ -74,10 +72,23 @@
 		"AUTH_TITLE": "Auteurs van het artikel"
 	},
 	"DATA": {
-		"TABLE_NAMES": {
+		"TABLE_HEADERS": {
 			"DATE": "Datum",
-			"TOTAL": "Totaal"
+			"TOTAL": "Totaal",
+			"DRENTHE": "Drenthe",
+			"FLEVOLAND": "Flevoland",
+			"FRIESLAND": "Friesland",
+			"GELDERLAND": "Gelderland",
+			"GRONINGEN": "Groningen",
+			"LIMBURG": "Limburg",
+			"NOORD-BRABANT": "Noord-Brabant",
+			"NOORD-HOLLAND": "Noord-Holland",
+			"OVERIJSSEL": "Overijssel",
+			"UTRECHT": "Utrecht",
+			"ZEELAND": "Zeeland",
+			"ZUID-HOLLAND": "Zuid-Holland"
 		},
+		"ITEMS_PER_PAGE": "Regels per pagina:",
 		"DESCRIPTION": "Deze tabellen geven de data weer die gebruikt wordt om voorspellingen te doen. Let op, de data is bewerkt en kan verschillen met de officiële cijfers. Een uitgebreide uitleg is te vinden op de <a href=\"downloads.html\">Downloads</a> pagina.",
 		"TITLE_INFECTED": "Aantal besmettingen per dag",
 		"TOGGLE_CUMU": "Cumulatief",
@@ -96,6 +107,12 @@
 		"ORIGINAL": {
 			"TITLE": "Originele auteurs",
 			"BODY": "Deze website is ontworpen door een groep van vijf bachelorstudenten Informatica voor hun Bachelor Eindproject. De website is ontwikkeld voor <a href=\"https://www.tudelft.nl/ewi/over-de-faculteit/afdelingen/intelligent-systems/multimedia-computing/people/huijuan-wang/\" target=\"_blank\">Dr. Huijuan Wang</a> en zij werden begeleid door <a href=\"https://www.tudelft.nl/ewi/over-de-faculteit/afdelingen/software-technology/web-information-systems/people/claudia-hauff/\" target=\"_blank\">Dr. Claudia Hauff</a>. De NAS groep is deze bachelorstudenten zeer erkentelijk en wil hen hartelijk bedanken voor het ontwikkelen van deze website."
+		},
+		"TRANSLATE": {
+			"TITLE": "Placeholder",
+			"BODY": "Placeholder",
+			"ENGLISH": "Engels",
+			"DUTCH": "Nederlands"
 		}
 	},
 	"DOWNLOADS": {

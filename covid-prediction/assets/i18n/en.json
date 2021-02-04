@@ -1,6 +1,4 @@
 {
-	"Datum": "Date",
-	"Totaal": "Total",
 	"MISSING_TRANSLATION": "This page is not yet available in English.",
 	"HEADER": {
 		"TITLE_1": "COVID-19",
@@ -74,10 +72,23 @@
 		"AUTH_TITLE": "Authors of the paper"
 	},
 	"DATA": {
-		"TABLE_NAMES": {
+		"TABLE_HEADERS": {
 			"DATE": "Date",
-			"TOTAL": "Total"
+			"TOTAL": "Total",
+			"DRENTHE": "Drenthe",
+			"FLEVOLAND": "Flevoland",
+			"FRIESLAND": "Friesland",
+			"GELDERLAND": "Gelderland",
+			"GRONINGEN": "Groningen",
+			"LIMBURG": "Limburg",
+			"NOORD-BRABANT": "Noord-Brabant",
+			"NOORD-HOLLAND": "Noord-Holland",
+			"OVERIJSSEL": "Overijssel",
+			"UTRECHT": "Utrecht",
+			"ZEELAND": "Zeeland",
+			"ZUID-HOLLAND": "Zuid-Holland"
 		},
+		"ITEMS_PER_PAGE": "Items per page:",
 		"DESCRIPTION": "These tables contain the data used to make the predictions. Please note that the data has been pre-processed and may differ from the official numbers. An explanation of the pre-processing steps can be found on the <a href=\"downloads.html\">Downloads</a> page.",
 		"TITLE_INFECTED": "Number of confirmed cases per day",
 		"TOGGLE_CUMU": "Cumulative",
@@ -96,6 +107,12 @@
 		"ORIGINAL": {
 			"TITLE": "Original creators",
 			"BODY": "The original version of this website was produced by a group of five Computer Science students for their final bachelor project. The client for the project was <a href=\"https://www.tudelft.nl/ewi/over-de-faculteit/afdelingen/intelligent-systems/multimedia-computing/people/huijuan-wang/\" target=\"_blank\">Dr. Huijuan Wang</a> and their coach was <a href=\"https://www.tudelft.nl/ewi/over-de-faculteit/afdelingen/software-technology/web-information-systems/people/claudia-hauff/\" target=\"_blank\">Dr. Claudia Hauff</a>. The NAS group would like to express gratitude to the original creators for allowing us to adapt their work:"
+		},
+		"TRANSLATE": {
+			"TITLE": "Translations",
+			"BODY": "The translation of this website has been made possible by the following people:",
+			"ENGLISH": "English",
+			"DUTCH": "Dutch"
 		}
 	},
 	"DOWNLOADS": {
