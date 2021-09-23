@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="600px" height="400px" viewBox="0 0 600 400" enable-background="new 0 0 600 400" xml:space="preserve">
+<g id="Base">
+	<rect fill="#232C65" width="600" height="400"/>
+</g>
+<g id="FG">
+	<polyline id="Slash2" fill="#FFFFFF" points="66.917,400 0,400 0,355.609 532.583,0 600,0 600,44.313 	"/>
+	<polyline id="Slash1_1_" fill="#FFFFFF" points="533.083,400 600,400 600,355.609 67.417,0 0,0 0,44.313 	"/>
+	<polyline id="TR" fill="#C8202E" points="600,0 399,134 350.811,134 550,0 600,0 	"/>
+	<polyline id="BL" fill="#C8202E" points="243.13,266 40.5,400 0,400 201,266 	"/>
+	<polyline id="BR" fill="#C8202E" points="399,265.999 600,400 600,370 445.411,266.004 	"/>
+	<polyline id="TL" fill="#C8202E" points="0,0 0,30 157.265,134 201.004,134.002 0,0 	"/>
+	<rect id="Hor" y="134" fill="#FFFFFF" width="600" height="132"/>
+	<rect id="Vert" x="250.25" fill="#FFFFFF" width="99.5" height="400"/>
+	<rect id="HRed" y="160" fill="#C8202F" width="600" height="80"/>
+	<rect id="Vred" x="270" fill="#C8202F" width="60" height="400"/>
+</g>
+</svg>

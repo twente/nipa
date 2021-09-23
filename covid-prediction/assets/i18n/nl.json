@@ -109,8 +109,8 @@
 			"BODY": "Deze website is ontworpen door een groep van vijf bachelorstudenten Informatica voor hun Bachelor Eindproject. De website is ontwikkeld voor <a href=\"https://www.tudelft.nl/ewi/over-de-faculteit/afdelingen/intelligent-systems/multimedia-computing/people/huijuan-wang/\" target=\"_blank\">Dr. Huijuan Wang</a> en zij werden begeleid door <a href=\"https://www.tudelft.nl/ewi/over-de-faculteit/afdelingen/software-technology/web-information-systems/people/claudia-hauff/\" target=\"_blank\">Dr. Claudia Hauff</a>. De NAS groep is deze bachelorstudenten zeer erkentelijk en wil hen hartelijk bedanken voor het ontwikkelen van deze website."
 		},
 		"TRANSLATE": {
-			"TITLE": "Placeholder",
-			"BODY": "Placeholder",
+			"TITLE": "Vertalingen",
+			"BODY": "De vertaling van deze website is mede mogelijk gemaakt door:",
 			"ENGLISH": "Engels",
 			"DUTCH": "Nederlands"
 		}
