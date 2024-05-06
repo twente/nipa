@@ -81,12 +81,12 @@
 			"GELDERLAND": "Gelderland",
 			"GRONINGEN": "Groningen",
 			"LIMBURG": "Limburg",
-			"NOORD-BRABANT": "Noord-Brabant",
-			"NOORD-HOLLAND": "Noord-Holland",
+			"NOORD-BRABANT": "North Brabant",
+			"NOORD-HOLLAND": "North Holland",
 			"OVERIJSSEL": "Overijssel",
 			"UTRECHT": "Utrecht",
 			"ZEELAND": "Zeeland",
-			"ZUID-HOLLAND": "Zuid-Holland"
+			"ZUID-HOLLAND": "South Holland"
 		},
 		"ITEMS_PER_PAGE": "Items per page:",
 		"DESCRIPTION": "These tables contain the data used to make the predictions. Please note that the data has been pre-processed and may differ from the official numbers. An explanation of the pre-processing steps can be found on the <a href=\"downloads.html\">Downloads</a> page.",
